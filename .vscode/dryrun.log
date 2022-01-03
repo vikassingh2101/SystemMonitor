@@ -1,0 +1,11 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/vikas/project/SystemMonitor'
+clang-format src/* include/* -i
+mkdir -p build
+cd build && \
+cmake .. && \
+make
+make: Leaving directory '/home/vikas/project/SystemMonitor'
+ 
+make: *** No rule to make target 'test', needed by 'all'.
+ 
